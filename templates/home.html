@@ -8,7 +8,6 @@
 {% block extrastyle %}{% static "css/home.css" %}{% endblock %}
 
 {% block content %}                         <!--content 블록 재정의-->
-
   <div id="content_home">     <!--content_home 영역 정의-->
 
       <div id="homeimg">      <!--homeimg 영역 정의-->
@@ -19,29 +18,31 @@
 
       <hr style="margin: 5px 0;">     <!--그림 및으로 5px 간격을 두고 수평선 넣기-->
 
-      <h2>웹 앱 선택</h2>
+      <h2>카테고리</h2>
 
       <table id="applist">
           <tr>
-          <td><b><i><a href="{% url 'bookmark:index' %}">책갈피</a></i></b></td>
-          <td>당신의 책갈피를 등록하고 다른 사람들과 공유할 수 있습니다. 어쩌구 저쩌구. 중얼중얼.</td>
+          <td><b><i><a href="{% url 'bookmark:index' %}">뉴스</a></i></b></td>
+          <td>서울 아파트 공급이 원활하지 않은 이유</td>
           <td id="Edit"><i><a href="#">등록</a></i></td>
           <td id="Edit"><i><a href="#">편집</a></i></td>
           </tr>
 
           <tr>
-          <td><b><i><a href="{% url 'blog:index' %}">게시판</a></i><b></td>
-          <td>당신의 게시물을 등록하고 다른 사람들과 공유할 수 있습니다. 어쩌구 저쩌구.</td>
+          <td><b><i><a href="{% url 'bookmark:index' %}">뉴스</a></i></b></td>
+          <td>직방, 우리은행과 손잡고 부동산 신사업 개발</td>
           <td id="Edit"><i><a href="#">등록</a></i></td>
           <td id="Edit"><i><a href="#">편집</a></i></td>
           </tr>
 
           <tr>
-          <td><b><i><a href="#">사진첩</a></i><b></td>
-          <td>당신의 사진을 등록하고 다른 사람들과 공유할 수 있습니다. 어쩌구 저쩌구.</td>
+          <td><b><i><a href="{% url 'blog:index' %}">공지사항</a></i><b></td>
+          <td>직방 개인정보 처리방침 개정안내</td>
           <td id="Edit"><i><a href="#">등록</a></i></td>
           <td id="Edit"><i><a href="#">편집</a></i></td>
           </tr>
+
+
       </table>
   </div>
   {% endblock content %}
