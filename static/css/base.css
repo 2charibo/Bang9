@@ -13,7 +13,7 @@
       height: 30px;
       width: 100%;
       display: table;
-      background: linear-gradient(to right, #ff0000, #ff9000, #fff000, #06ff00, #00ffc0, #009cff, #0024ff, #7200ff);
+      background: #3251ce;
   }
 
   div#menu {
@@ -25,7 +25,7 @@
       display: table;
       table-layout: fixed;
       border-spacing: 40px 0px;
-      background: #ffa;
+      background: white;
       font-size: 8px;
   }
 
