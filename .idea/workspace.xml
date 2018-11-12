@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8321cfa-6007-4756-8fb6-5b03b7a8a7e4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +41,11 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="391">
+              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
-                <element signature="e#1089#1106#0#HTML" expanded="true" />
-                <element signature="e#1556#1573#0#HTML" expanded="true" />
+                <element signature="e#1103#1120#0#HTML" expanded="true" />
+                <element signature="e#1570#1587#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -251,11 +250,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="391">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="e#1089#1106#0#HTML" expanded="true" />
-            <element signature="e#1556#1573#0#HTML" expanded="true" />
+            <element signature="e#1103#1120#0#HTML" expanded="true" />
+            <element signature="e#1570#1587#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
