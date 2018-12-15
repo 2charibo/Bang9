@@ -43,7 +43,26 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bookmark.apps.BookmarkConfig',     # (ch02) bookmark 앱을 추가 등록
     'blog.apps.BlogConfig',             # (ch03) blog 앱을 추가 등록
+    'tagging.apps.TaggingConfig',  # (ch07) tagging 앱을 추가 등록
 ]
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'bookmark.apps.BookmarkConfig',     # (ch02) bookmark 앱을 추가 등록
+    'blog.apps.BlogConfig',             # (ch03) blog 앱을 추가 등록
+    'tagging.apps.TaggingConfig',       # (ch07) tagging 앱을 추가 등록
+    'disqus',                           # (ch08) 1/4
+    'django.contrib.sites',             # (ch08) 2/4
+    'photo.apps.PhotoConfig',                  # (ch10) 1/1
+]
+DISQUS_WEBSITE_SHORTNAME = 'lightupthesky'   # (ch08) 3/4 [Website Name]
+SITE_ID = 1                             # (ch08) 4/4 django.contrib.sites를 등
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,4 +148,15 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]   # 추가 (교과서 40 쪽)
 
 MEDIA_URL = '/media/'                             # 추가 (교과서 40 쪽)
-MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]    # 추가 (교과서 40 쪽)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')    # 추가 (교과서 40 쪽)
+
+# ch11 1/1 추가
+# 로그인 페이지로 리다이렉트시키는 URL이며 login_required() 데코레이터에서 사용함
+# LOGIN_URL = '/accounts/login/'        # 기본값 사용
+# 로그아웃 페이지로 리다이렉트시키는 URL
+# LOGOUT_URL = '/accounts/logout/'      # 기본값 사용
+# 장고 기본 로그인 뷰 contrib.auth.login()는 로그인 성공 시
+#   next 매개변수로 지정한 URL로 리다이렉트 하는데,
+#   만일 next 매개변수가 지정되지 않으면 이 URL로 리다이렉트 시키며,
+#   login_required() 데코레이터에서 사용함
+LOGIN_REDIRECT_URL = '/'

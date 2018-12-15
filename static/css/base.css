@@ -1,8 +1,7 @@
- body {
+  body {                      
       /*font-family: "Lucida Grande", Verdana, Arial, sans-serif;*/
-
-      font-family: 'Sunflower', sans-serif;
-      font-size: 12px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 16px;    /* ch08 1/1 */
   }
 
   /* PAGE STRUCTURE */
@@ -10,10 +9,11 @@
       position: absolute;
       top: 0px;
       left: 0px;
-      height: 30px;
+      height: 60px;
       width: 100%;
       display: table;
-      background: #3251ce;
+      background: #054c78;
+      font-size: 18px;
   }
 
   div#menu {
@@ -25,8 +25,8 @@
       display: table;
       table-layout: fixed;
       border-spacing: 40px 0px;
-      background: white;
-      font-size: 8px;
+      background: whitesmoke;
+      font-size: 12px;
   }
 
   div#content {
@@ -49,8 +49,8 @@
   .maintitle {
       display: table-cell;
       vertical-align: middle;
-      padding-left: 20px;
-      color: #ffc;
+      padding-left: 50px;
+      color: white;
       font-weight: bold;
       font-size: 16px;
   }
@@ -103,7 +103,7 @@
 
   /* LINK */
   a:link, a:visited {
-      color: #369;
+      color: white;
       text-decoration: none;
   }
 
@@ -122,4 +122,9 @@
       vertical-align: top;
       padding: 5px 15px;
       /*font-family: "Lucida Grande", Verdana, Arial, sans-serif;*/
+  }
+
+  #headerlogo{
+      width: 110px;
+      height: 60px;
   }
