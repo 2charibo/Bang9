@@ -35,53 +35,45 @@
 
 
       </div>
-      <h2>카테고리</h2>
 
-      <table id="applist">
-          <tr>
-          <td><b><i><a href="{% url 'bookmark:index' %}">뉴스</a></i></b></td>
-          <td>서울 아파트 공급이 원활하지 않은 이유</td>
-          <td id="Edit"><i><a href="#">등록</a></i></td>
-          <td id="Edit"><i><a href="#">편집</a></i></td>
-          </tr>
+  <br>
+      <br>
+    <div id="news">
 
-          <tr>
-          <td><b><i><a href="{% url 'bookmark:index' %}">뉴스</a></i></b></td>
-          <td>직방, 우리은행과 손잡고 부동산 신사업 개발</td>
-          <td id="Edit"><i><a href="#">등록</a></i></td>
-          <td id="Edit"><i><a href="#">편집</a></i></td>
-          </tr>
-
-          <tr>
-          <td><b><i><a href="{% url 'blog:index' %}">공지사항</a></i><b></td>
-          <td>직방 개인정보 처리방침 개정안내</td>
-          <td id="Edit"><i><a href="#">등록</a></i></td>
-          <td id="Edit"><i><a href="#">편집</a></i></td>
-          </tr>
+          <div id="news1">
+          <h2>공지사항</h2> <button><a id="newsP1" href="{% url 'bookmark:index' %}">+더보기</a></button>
+          <hr>
+              <ul>
+                  <li><a>[이벤트] 방구홈 집들이에 여러분들을 초대합니다!</a></li>
+                  <li><a>집 구할 때, 꼭 확인해야할 10가지!</a></li>
+                  <li><a>방구 개인정보처리방침(2018/08/17) 개정안내</a></li>
+                  <li><a>알면 대박 부동산 꿀팁, 지금 바로 확인해보세요!</a></li>
+                  <li><a>직접 방문했는데, 허위매물? 헛걸음 보상 신청하기</a></li>
 
 
-      </table>
+              </ul>
+          </div>
+          <div id="news2">
+              <h2>방구 뉴스</h2> <button><a id="newsP2" href="{% url 'bookmark:index' %}">+더보기</a></button>
+          <hr>
+              <ul>
+                  <li><a>다방의 2018년 신규 광고 영상 1000만 조회수 돌파</a></li>
+                  <li><a>방9, 끈질긴 허위매물 뿌리 뽑는다</a></li>
+                  <li><a>[스타트업 굿즈 리뷰] "헛걸음 보상해 드려요"</a></li>
+                  <li><a>1인 가구 밀집 지역에 ‘방구 케어센터’ 공식 오픈</a></li>
+                  <li><a>‘방구’, O2O 브랜드 가치 큰폭 상승.. 1위 석권</a></li>
+                  <li><a>방구, 데이터 분석 센터 구축</a></li>
 
-
-      <h2>공지사항</h2>
-
-      <div>
-          <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-          </ul>
+              </ul>
+          </div>
       </div>
-  </div>
 
 
   {% endblock content %}
 
   {% block footer %}                      <!--footer 블록 재정의-->
-  <!--<div id="footer">-->
-      <!--&lt;!&ndash;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png"&ndash;&gt;-->
-           <!--&lt;!&ndash;height="12" width="12" /> LeeHyeRim&ndash;&gt;-->
-  <!--</div>-->
+  <div id="footer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png"
+           height="12" width="12" /> Bang9 Company
+  </div>
   {% endblock footer %}

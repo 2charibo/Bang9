@@ -14,7 +14,9 @@
   }
 
   div#sortmenu {
-
+    width: 930px;
+    margin-left: auto;
+      margin-right: auto;
   }
 
   div#searchBox{
@@ -53,4 +55,35 @@
       /*margin-left: 150px;*/
       float:left;
 
+  }
+
+  #news h2{
+      display: inline;
+  }
+  div#news{
+      text-align: left;
+      width: 800px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  div#news1 {
+      width: 380px;
+      font-size: 13px;
+      float: left;
+      list-style: none;
+
+  }
+
+  div#news2 {
+      width: 380px;
+      font-size: 13px;
+      float: right;
+
+  }
+
+  a#newsP1, a#newsP2{
+      float: left;
+      text-decoration: none;
+      color: #000000;
   }
