@@ -1,0 +1,71 @@
+/* album_list.html */
+div.album-list {
+    margin: 20px 50px; /* 상하 좌우 */
+}
+
+div.album-list-photo {
+    float: left;
+    width: 150px;
+    height: 180px;
+}
+
+/* album_detail.html */
+div.album-detail {
+    margin: 30px 10px;
+}
+
+div.album-detail-photo {
+    float: left;
+    width: 220px;
+    height: 220px;
+}
+
+div.album-detail-photo > li {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* photo_detail.html */
+table.photo-detail {
+    margin: 30px auto 60px;
+    width: 80%;
+}
+
+/* common */
+img.thumbnail {
+    border:1px solid #ccc;
+}
+
+div.clear_float {
+    clear: both;
+}
+
+.pic-image { max-height: 500px; width: auto; text-align: center; }
+.centered { text-align: center; }
+.col-left {
+    width: 7%;
+    text-align: left;
+    padding: auto auto auto 20px;
+    border: 2px solid #cccccc;
+}
+.col-right {
+    width: 10%;
+    text-align: left;
+    padding: auto auto auto 20px;
+    border: 2px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

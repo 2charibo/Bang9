@@ -1,0 +1,79 @@
+{% extends "base.html" %}                   <!--base.html을 상속받는다고 선언-->
+
+{% block title %}나랑 ♥방구♥할래?{% endblock %}    <!--title 블록 재정의-->
+
+<!--정적 파일인 css 연결하기 위하여, staticfiles를 로드-->
+{% load staticfiles %}
+<!--extrastyle 블록을 재정의하여 추가적으로 home.css 연결-->
+{% block extrastyle %}{% static "css/home.css" %}{% endblock %}
+
+{% block content %}                         <!--content 블록 재정의-->
+  <div id="content_home">     <!--content_home 영역 정의-->
+
+      <div id="homeimg">      <!--homeimg 영역 정의-->
+          <!--<a href="/"><img src="{% static 'img/iznone.jpg' %}" style="height:256px;"/></a>-->
+          <a href="/"><img src="{% static 'img/쿠야광고.gif' %}" style="width:80%;"/></a>
+          <!--<h4 style="margin: 0;">장고 프레임워크로 개발한 웹 사이트입니다.</h4>-->
+      </div>
+      <br/><br/>
+      <!--<hr style="margin: 5px 0;">     &lt;!&ndash;그림 및으로 5px 간격을 두고 수평선 넣기&ndash;&gt;-->
+      <div id="searchBox"> <input type="text" id="search"><a id="searchButton" href="{% url 'bookmark:index' %}">방 찾기</a><br> </div>
+          <!--<form action="." method="post" class="centered"> {% csrf_token %}-->
+              <!--{{ form.as_table }}-->
+        <!--<input type="text" id="search1"><input type="submit" value="방 찾기" />-->
+    <!--</form>-->
+
+      <br/><br/>
+      <div id="sortmenu" >
+          <h2 style="text-align: center">쉬운 방 찾기</h2>
+          <a href="/"><img src="{% static 'img/복층원룸2.jpg' %}" style="width:300px;"></a>
+          <a href="/"><img src="{% static 'img/고양이2.jpg' %}" style="width:300px;"></a>
+          <a href="/"><img src="{% static 'img/오피스텔.jpg' %}" style="width:300px;"></a>
+          <a href="/"><img src="{% static 'img/웜룸.jpg' %}" style="width:300px;"></a>
+          <a href="/"><img src="{% static 'img/아파트.jpg' %}" style="width:300px;"></a>
+
+
+
+      </div>
+
+  <br>
+      <br>
+    <div id="news">
+
+          <div id="news1">
+          <h2>공지사항</h2> <button><a id="newsP1" href="{% url 'bookmark:index' %}">+더보기</a></button>
+          <hr>
+              <ul>
+                  <li><a>[이벤트] 방구홈 집들이에 여러분들을 초대합니다!</a></li>
+                  <li><a>집 구할 때, 꼭 확인해야할 10가지!</a></li>
+                  <li><a>방구 개인정보처리방침(2018/08/17) 개정안내</a></li>
+                  <li><a>알면 대박 부동산 꿀팁, 지금 바로 확인해보세요!</a></li>
+                  <li><a>직접 방문했는데, 허위매물? 헛걸음 보상 신청하기</a></li>
+
+
+              </ul>
+          </div>
+          <div id="news2">
+              <h2>방구 뉴스</h2> <button><a id="newsP2" href="{% url 'bookmark:index' %}">+더보기</a></button>
+          <hr>
+              <ul>
+                  <li><a>다방의 2018년 신규 광고 영상 1000만 조회수 돌파</a></li>
+                  <li><a>방9, 끈질긴 허위매물 뿌리 뽑는다</a></li>
+                  <li><a>[스타트업 굿즈 리뷰] "헛걸음 보상해 드려요"</a></li>
+                  <li><a>1인 가구 밀집 지역에 ‘방구 케어센터’ 공식 오픈</a></li>
+                  <li><a>‘방구’, O2O 브랜드 가치 큰폭 상승.. 1위 석권</a></li>
+                  <li><a>방구, 데이터 분석 센터 구축</a></li>
+
+              </ul>
+          </div>
+      </div>
+
+
+  {% endblock content %}
+
+  {% block footer %}                      <!--footer 블록 재정의-->
+  <div id="footer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png"
+           height="12" width="12" /> Bang9 Company
+  </div>
+  {% endblock footer %}

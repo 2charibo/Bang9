@@ -1,0 +1,49 @@
+#tbl {
+      border-collapse: collapse;
+      width: 90%;
+      margin: auto;
+  }
+
+  #tbl td, #tbl th {
+      border: 1px solid #ddd;   /* 테이블선 */
+      padding: 8px;
+  }
+
+  #tbl tr:nth-child(even){background-color: #f2f2f2;}  /* 홀수색 칸 */
+
+  #tbl tr:hover {background-color: #ddd;}  /* 마우스 누르면 변하는 칸 */
+
+  #tbl th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #75a6d2;   /* 테이블색 여기야 친구들 */
+      color: white;
+  }
+
+  .centered { text-align: center;}
+  .leftpadding30percent { padding-left: 30%; }
+
+   #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin-top: 40px;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #054c78;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+        margin-top: 80px;
+      }
