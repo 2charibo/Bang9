@@ -18,8 +18,13 @@ class Migration(migrations.Migration):
             field=models.CharField(blank=True, max_length=50, verbose_name='해당층/건물층'),
         ),
         migrations.AlterField(
+<<<<<<< HEAD
             model_name='album',
             name='name',
+=======
+            model_name='photo',
+            name='loca',
+>>>>>>> 56107dc587186f484a707e63fff85641a69ca99b
             field=models.CharField(max_length=50, verbose_name='지역명'),
         ),
         migrations.AlterField(

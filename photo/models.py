@@ -8,7 +8,11 @@ from pytz import timezone
 
 
 class Album(models.Model):
+<<<<<<< HEAD
     name = models.CharField('지역명', max_length=50)
+=======
+    name = models.CharField('부동산', max_length=50)
+>>>>>>> 56107dc587186f484a707e63fff85641a69ca99b
     description = models.CharField('앨범 설명', max_length=100, blank=True)
 
     class Meta:
@@ -30,6 +34,10 @@ class Photo(models.Model):
     # MEDIA_ROOT로 지정된 폴더 하위에 /photo/2018/03/과 같은 폴더를 생성하고,
     # 여기에 업로드된 파일을 자동적으로 저장해줌
     image = ThumbnailImageField(upload_to='photo/%Y/%m')
+<<<<<<< HEAD
+=======
+    loca = models.CharField('지역명', max_length=50, blank=True)
+>>>>>>> 56107dc587186f484a707e63fff85641a69ca99b
     bojunggum = models.CharField('보증금/월세', max_length=50, blank=True)
     junse = models.CharField('전세', max_length=50, blank=True)
     m = models.CharField('전용/공급면적', max_length=20, blank=True)
