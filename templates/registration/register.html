@@ -15,13 +15,13 @@
     <p>회원님에 대해 알려주세요.</p>
     <fieldset class="aligned">
         <div class="form-row">
-            {{ form.username.label_tag }} {{ form.username }}
+            이름: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ form.username }}
         </div>
         <div class="form-row">
-            {{ form.password1.label_tag }} {{ form.password1 }}
+            비밀번호: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ form.password1 }}
         </div>
         <div class="form-row">
-            {{ form.password2.label_tag }} {{ form.password2 }}
+            비밀번호 확인: &nbsp;{{ form.password2 }}
         </div>
     </fieldset>
     <div class="submit-row">
