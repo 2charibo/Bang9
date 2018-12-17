@@ -103,7 +103,11 @@
 
   /* LINK */
   a:link, a:visited {
+<<<<<<< HEAD
       color: hotpink;
+=======
+      color: white;
+>>>>>>> cd08599744dd5675ee3f290d68e32910fbd06d5b
       text-decoration: none;
   }
 
