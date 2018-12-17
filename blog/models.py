@@ -16,7 +16,7 @@ class Post(models.Model):
     title = models.CharField('제목', max_length=50)
     slug = models.SlugField('카테고리',  # 기본 길이 50, 인덱스가 기본 생성됨,
                                        # 제목에서 주요 단어를 하으픈으로 연결하여 생성
-                            unique=True,  # unique 설정, 기본키 대용으로 사용 가능
+                            unique=False,  # unique 설정, 기본키 대용으로 사용 가능
                             allow_unicode=True,  # 한글 입력 가능하도록
                             help_text='공지사항/뉴스 카테고리 구분')
     description = models.CharField('설명',

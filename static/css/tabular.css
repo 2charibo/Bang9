@@ -20,7 +20,7 @@
 }
 
 #tbl #summary {
-    width: 10%;
+    width: 14%;
 }
 
 #tbl #day {
@@ -28,7 +28,7 @@
 }
 
 #tbl #category {
-    width: 15%;
+    width: 10%;
 }
 
 #tbl tr:nth-child(even){background-color: #f2f2f2;}
