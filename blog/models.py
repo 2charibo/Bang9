@@ -14,11 +14,11 @@ class Post(models.Model):
     # 아래에서 관리자 화면의 레이블과 도움말은 모두 한글로 수정하였음(교과서에서는 대문자 영문이었음)
     # 한 줄로 입력되는 CharField
     title = models.CharField('제목', max_length=50)
-    slug = models.SlugField('슬러그',  # 기본 길이 50, 인덱스가 기본 생성됨,
+    slug = models.SlugField('카테고리',  # 기본 길이 50, 인덱스가 기본 생성됨,
                                        # 제목에서 주요 단어를 하으픈으로 연결하여 생성
                             unique=True,  # unique 설정, 기본키 대용으로 사용 가능
                             allow_unicode=True,  # 한글 입력 가능하도록
-                            help_text='제목에 대한 한 단어의 별명.')
+                            help_text='공지사항/뉴스 카테고리 구분')
     description = models.CharField('설명',
                                    max_length=100,
                                    blank=True,  # 블랭크 허용
