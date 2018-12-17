@@ -15,7 +15,7 @@
   <body>              <!--바디 영역은 4 영역(헤더/메뉴/콘텐츠/풋터)으로 구성-->
 
   <div id="header"><!-- ch11 div#header 수정 -->
-      <img src="{% static 'img/logo2.png' %}" id="headerlogo">
+      <a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" id="headerlogo"></a>
     <ul class="maintitle" style="text-align: center">
       <li class="maintitle"><a href="{% url 'home' %}">홈</a></li>
       <li class="maintitle"><a href="{% url 'bookmark:index' %}">방 찾기</a></li>
