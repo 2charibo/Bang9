@@ -132,3 +132,7 @@
   #header {
     color: white !important;
   }
+
+  div#header a:link, div#header a:visited {
+      color:white;
+  }

@@ -1,28 +1,53 @@
 #tbl {
-      border-collapse: collapse;
-      width: 90%;
-      margin: auto;
-  }
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
 
-  #tbl td, #tbl th {
-      border: 1px solid #ddd;   /* 테이블선 */
-      padding: 8px;
-  }
+#tbl td, #tbl th {
+    border: 1px solid #ddd;
+    padding: 15px 15px;
+    width: 50px;
+}
 
-  #tbl tr:nth-child(even){background-color: #f2f2f2;}  /* 홀수색 칸 */
+#tbl #number {
+    width: 8%;
+}
 
-  #tbl tr:hover {background-color: #ddd;}  /* 마우스 누르면 변하는 칸 */
+#tbl tr:nth-child(even){background-color: #f2f2f2;}
 
-  #tbl th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #75a6d2;   /* 테이블색 여기야 친구들 */
-      color: white;
-  }
+#tbl tr:hover {background-color: #ddd;}
 
-  .centered { text-align: center;}
-  .leftpadding30percent { padding-left: 30%; }
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background: #75a6d2;
+    color: white;
+}
+
+#modification {
+    font-weight: bold;
+    font-size: x-large;
+    float: right;
+}
+
+.centered { text-align: center;}
+.leftpadding30percent { padding-left: 30%; }
+
+#tag {
+    font-weight: bold;
+    font-size: large;
+}
+
+.modification {
+    text-decoration: none;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px 40px auto 0px;
+}
 
    #map {
         height: 100%;
