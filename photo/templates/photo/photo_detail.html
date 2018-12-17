@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}방 정보{% endblock %}
+
+{% load staticfiles %}
+{% block extrastyle %}{% static "photo/photo.css" %}{% endblock %}
+
+{% block content %}
+<div id="content" class="centered" >
+    <h2 class="centered">{{ object.title }}</h2>
+    <p class="centered">
+        <!--newer_id = {{ object.get_newer_photo.id }} newer_url = {{ object.get_previous_photo.get_absolute_url }}</br>-->
+        <!--object.album = {{ object.album }} object.id = {{ object.id }}</br>-->
+        <!--older_id = {{ object.get_older_photo.id }} older_url = {{ object.get_older_photo.get_absolute_url }} </br>-->
+        {% if object.get_next_photo %}
+            <a href="{{ object.get_next_photo.get_absolute_url }}" title="다음 사진">
+                {{ object.get_next_photo }} «--
+            </a>
+        {% else %}
+            끝
+        {% endif %}
+         &nbsp;&nbsp; | &nbsp;&nbsp;
+        {% if object.get_previous_photo %}
+            <a href="{{ object.get_previous_photo.get_absolute_url }}" title="이전 사진">
+                --» {{ object.get_previous_photo }}
+            </a>
+        {% else %}
+            처음
+        {% endif %}
+    </p>
+    <a href="{{ object.image.url }}">
+        <img class="pic-image" src="{{ object.image.url }}" />
+    </a>
+    <table class="photo-detail">
+        <tr>
+            <td class="col-left">지역</td>
+            <td class="col-right">
+                <p><a href="{% url 'photo:album_detail' object.album.id %}">{{ object.album.name }}</a></p>
+            </td>
+            <td class="col-left">반려동물</td>
+            <td class="col-right">
+                <p>{{ object.animal }}</p>
+                <!--https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs-->
+            </td>
+        </tr>
+        <tr>
+            <td class="col-left">보증금/월세</td>
+            <td class="col-right">
+                <p>{{ object.bojunggum }}</p>
+            </td>
+            <td class="col-left">전세자금대출</td>
+            <td class="col-right">
+                <p>{{ object.loan }}</p>
+                <!--https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs-->
+            </td>
+        </tr>
+        <tr>
+            <td class="col-left">전세</td>
+            <td class="col-right">
+                <p>{{ object.junse }}</p>
+            </td>
+            <td class="col-left">베란다/발코니</td>
+            <td class="col-right">
+                <p>{{ object.balcony }}</p>
+                <!--https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs-->
+            </td>
+        </tr>
+        <tr>
+            <td class="col-left">전용/공급면적</td>
+            <td class="col-right">
+                <p>{{ object.m }}</p>
+                <!--https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs-->
+            </td>
+            <td class="col-left">입주가능일</td>
+            <td class="col-right">
+                <p>{{ object.inHome }}</p>
+            </td>
+        <tr>
+            <td class="col-left">상세설명</td>
+            <td class="col-right" colspan="3">
+                <p>{{ object.description|linebreaks }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-left">등록 일시</td>
+            <td class="col-right" colspan="3">
+                <p>{{ object.upload_date|date:"Y년 m월 d일 H시 i분" }}</p>
+                <!--https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs-->
+            </td>
+        </tr>
+    </table>
+
+</div>
+{% endblock %}
