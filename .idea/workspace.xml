@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6961376c-4cae-44d0-bc9a-d159e50840da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="6961376c-4cae-44d0-bc9a-d159e50840da" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +355,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49785176" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49785176" visible="true" weight="0.8567376" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021482" side_tool="true" weight="0.29105324" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3295583" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
