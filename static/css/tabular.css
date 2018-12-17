@@ -9,6 +9,7 @@
     border: 1px solid #ddd;
     padding: 15px 15px;
     width: 50px;
+    vertical-align: inherit;
 }
 
 #tbl #number {
