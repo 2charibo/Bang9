@@ -1,6 +1,6 @@
 #tbl {
     border-collapse: collapse;
-    width: 80%;
+    width: 85%;
     margin: auto;
     text-align: center;
 }
@@ -12,7 +12,7 @@
 }
 
 #tbl #number {
-    width: 8%;
+    width: 5%;
 }
 
 #tbl #postTitle {
@@ -20,15 +20,15 @@
 }
 
 #tbl #summary {
-    width: 14%;
+    width: 12%;
 }
 
 #tbl #day {
-    width: 17%;
+    width: 14%;
 }
 
 #tbl #category {
-    width: 10%;
+    width: 13%;
 }
 
 #tbl tr:nth-child(even){background-color: #f2f2f2;}
